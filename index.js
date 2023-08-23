@@ -5,5 +5,8 @@ var c = url.searchParams.get("url");
 
 // Check that there is something there otherwhise it will get stuck in a loop
 if(c) {
-window.location = (c)
+    if (c.startsWith("http://") || c.startsWith("https://")) {
+        c = "https://" + c
+    }
+    window.location = (c)
 }
