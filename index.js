@@ -7,7 +7,7 @@ var o = url.searchParams.get("obf");
 // Check that there is something there otherwhise it will get stuck in a loop
 if(c) {
     // Check if url is obfuscated
-    if (obf) {
+    if (o) {
         c = atob(c)
     }
     if (c.startsWith("http://") || c.startsWith("https://")) {
