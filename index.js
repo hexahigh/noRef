@@ -25,6 +25,7 @@ if(c) {
 
 function ifN(i) {
     if (!n) {
+        console.log("Don't redirect parameter found, not redirecting.")
         window.location = i
     }
 }
